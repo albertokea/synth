@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as Tone from 'tone';
+import * as p5 from 'p5';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Synth';
+
+  ready: boolean;
+
 }
+
+
+

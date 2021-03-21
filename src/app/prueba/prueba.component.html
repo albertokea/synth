@@ -1,0 +1,17 @@
+<button (click)="mousePressed()">Play</button>
+<label for="">Oscillator 1</label>
+<select (change)="changeType($event, 1)">
+    <option value="sine">Sine</option>
+    <option value="saw">Saw</option>
+    <option value="triangle" selected="true">Triangle</option>
+    <option value="square">Square</option>
+</select>
+<input type="range" min="20" max="3500" (change)="changeFreq($event, 1)">
+<label for="">Oscillator 2</label>
+<select (change)="changeType($event, 2)">
+    <option value="sine">Sine</option>
+    <option value="saw">Saw</option>
+    <option value="triangle">Triangle</option>
+    <option value="square" selected="true">Square</option>
+</select>
+<input type="range" min="20" max="2500" (change)="changeFreq($event, 2)">
